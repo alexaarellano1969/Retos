@@ -1,25 +1,12 @@
-package hospital;
-import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
-Scanner input = new Scanner(System.in);
-Paciente p1 = new Paciente();
+        Entrada entrada1 = new Entrada( "Concierto de Tewnty One Pilots", 800.00);
+        Entrada entrada2 = new Entrada("Obra de teatro el lago de los cisnes", 450.50);
+        Entrada entrada3 = new Entrada("Cine de terror", 150.00);
 
-        System.out.println("Ingresa el nombre del paciente");
-        p1.nombre=input.nextLine();
-
-
-        System.out.println("Ingresa la edad del paciente");
-        p1.edad =input.nextInt();
-        input.nextLine();
-
-
-        System.out.println("Ingresa Numero de Expediente");
-        p1.numeroExpediente=input.nextLine();
-        input.close();
-
-        p1.mostrarInformacion();
-
+        entrada1.mostrarInformacion();
+        entrada2.mostrarInformacion();
+        entrada3.mostrarInformacion();
 
     }
 }
